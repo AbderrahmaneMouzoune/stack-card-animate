@@ -5,28 +5,28 @@ function ScrollableAnimate() {
     {
       id: 'card1',
       title: 'Card 1',
-      bgColor:
-        'bg-purple-300 dark:bg-purple-950 text-purple-900 dark:text-purple-100',
+      bgColor: 'bg-cyan-300 dark:bg-cyan-950 text-cyan-900 dark:text-cyan-100',
     },
     {
       id: 'card2',
       title: 'Card 2',
-      bgColor: 'bg-fuchsia-300 dark:bg-fuchsia-950',
+      bgColor: 'bg-sky-300 dark:bg-sky-950 text-sky-900 dark:text-sky-100',
     },
     {
       id: 'card3',
       title: 'Card 3',
-      bgColor: 'bg-pink-300 dark:bg-pink-950 text-pink-900 dark:text-pink-100',
+      bgColor: 'bg-blue-300 dark:bg-blue-950 text-blue-900 dark:text-blue-100',
     },
     {
       id: 'card4',
       title: 'Card 4',
-      bgColor: 'bg-rose-300 dark:bg-rose-950 text-rose-900 dark:text-rose-100',
+      bgColor:
+        'bg-indigo-300 dark:bg-indigo-950 text-indigo-900 dark:text-indigo-100',
     },
   ]
 
   return (
-    <div className="flex min-h-screen justify-center bg-slate-200">
+    <div className="flex min-h-screen justify-center">
       <div className="mx-auto w-[90%]">
         <ul className="grid grid-cols-1 gap-5 py-[calc(4*1.5em)]">
           {cards.map((card, index) => (
@@ -36,7 +36,7 @@ function ScrollableAnimate() {
               style={{ paddingTop: `${(index + 1) * 1.5}em` }}
             >
               <div
-                className={`${card.bgColor} flex h-[87vh] items-center justify-center rounded-3xl p-8 transition-all duration-500`}
+                className={`${card.bgColor} mx-auto flex h-[87vh] max-w-5xl items-center justify-center rounded-3xl p-8 transition-all duration-500`}
               >
                 <Headline>{card.title}</Headline>
               </div>
