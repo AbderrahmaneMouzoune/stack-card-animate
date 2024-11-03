@@ -1,3 +1,5 @@
+import { Headline } from '@components/ui/headline'
+
 function ScrollableAnimate() {
   const cards = [
     {
@@ -36,7 +38,7 @@ function ScrollableAnimate() {
               <div
                 className={`${card.bgColor} flex h-[87vh] items-center justify-center rounded-3xl p-8 transition-all duration-500`}
               >
-                <h2 className="text-4xl text-white">{card.title}</h2>
+                <Headline>{card.title}</Headline>
               </div>
             </li>
           ))}
