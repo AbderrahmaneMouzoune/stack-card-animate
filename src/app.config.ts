@@ -2,7 +2,7 @@ import { env } from '@/env.mjs'
 import type { Metadata } from 'next'
 
 export const APP_CONFIG = {
-  name: 'amouz-boilerplate',
+  name: 'Stack Card Animate',
   creator: 'Abderrahmane MOUZOUNE',
   website: (env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000') as string,
   twitter: '@abderrahmane_js',
@@ -20,8 +20,7 @@ export const FALLBACK_SEO: Metadata = {
       ? `[${env.NODE_ENV.substring(0, 3)}] - ${APP_CONFIG.name}`
       : APP_CONFIG.name,
   openGraph: {
-    title:
-      'amouz-boilerplate the fastest & safest way to start an Strapi + Nextjs project',
+    title: 'Card stack on scroll animation only css',
     url: new URL(APP_CONFIG.website),
     siteName: APP_CONFIG.name,
     images: [
