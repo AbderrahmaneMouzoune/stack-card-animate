@@ -10,7 +10,7 @@ export default function Home() {
         </Headline>
       </div>
       <ScrollableAnimate />
-      <div className="h-screen bg-amber-200 dark:bg-amber-900" />
+      <div className="h-screen bg-teal-200 dark:bg-teal-950" />
     </main>
   )
 }
